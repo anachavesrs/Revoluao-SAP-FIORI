@@ -5,17 +5,17 @@
          <content>
             <FlexBox
             justifyContent="Center">
-                <Input/>
-                <Button text="Buscar"/>
+                <Input  id="inpBusca"  />
+                <Button text="Buscar" press = "onPressBuscar"/>
             </FlexBox>
 
-            <List headerText="Lista de Resultados" id="idList" items="{ModeloImagens>/Images}">
-               <CustomListItem>
-                   <HBox>
-                       <Image src="{ModeloImagens>thumbnail}" width="5em"/>
+            <List headerText="Lista de Resultados" id="idList" items="{ModeloImagem>/Images}">
+               <CustomListItem> 
+                   <HBox> 
+                       <Image src="{ModeloImagem>thumbnail}" width="5em"/>
                        <VBox>
-                            <Link text="{ModeloImagens>title}" href="{ModeloImagens>url}" target="_blank"/>
-                            <Label text="{ModeloImagens>provider/name}"/>
+                            <Link text="{ModeloImagem>title}" href="{ModeloImagem>url}" target="_blank"/>
+                            <Label text="{ModeloImagem>provider/name}"/>
                       </VBox>
                    </HBox>
                </CustomListItem>
