@@ -29,7 +29,6 @@ sap.ui.define([
 			//alert("começou a revolução do SAP FIORI")
             var oInputBusca = this.byId("inpBusca");
             var sQuery = oInputBusca.getValue();
-            alert(sQuery);
 
 
             $.ajax({
